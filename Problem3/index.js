@@ -13,7 +13,7 @@ app.get("/metrics", (req, res) => {
     var result = radius * radius * Math.PI;
     result = result.toFixed(2);
   } else {
-    var result = (4 / 3) * radius * radius * radius * Math.PI;
+    var result = (4 / 3) *Math.pow(radius,3) * Math.PI;
     result = result.toFixed(2);
   }
 
